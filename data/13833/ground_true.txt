@@ -1,0 +1,15 @@
+lenMv 120 
+ta_list is : 
+1
+62
+list size: 2
+tai_list is : 
+0
+61
+list size: 2
+MvAlarm_Cnt 2 
+ppsAverageCnt 1 
+趨勢為內部放電!!!但可能為雜訊
+13833_20191216203200_20191216223200.pickle
+
+

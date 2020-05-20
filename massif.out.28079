@@ -1,0 +1,823 @@
+desc: --time-unit=B
+cmd: ./main
+time_unit: B
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=568
+mem_heap_B=552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=4672
+mem_heap_B=4648
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=5704
+mem_heap_B=5672
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=6192
+mem_heap_B=6152
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=6760
+mem_heap_B=6704
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=10864
+mem_heap_B=10800
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=10864
+mem_heap_B=10800
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=detailed
+n3: 10800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 9216 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 9216 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 8192 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 8192 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n1: 4096 0x4E8D25E: _IO_vfscanf (vfscanf.c:634)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400CB9: read_data (read_data.c:80)
+        n0: 4096 0x40133B: main (main.c:24)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 1104 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n1: 552 0x400C6C: read_data (read_data.c:75)
+   n0: 552 0x40133B: main (main.c:24)
+ n0: 480 0x40131E: main (main.c:23)
+#-----------
+snapshot=8
+#-----------
+time=14968
+mem_heap_B=6704
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=15536
+mem_heap_B=6152
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=16024
+mem_heap_B=6628
+mem_heap_extra_B=52
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=16560
+mem_heap_B=6180
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=17048
+mem_heap_B=6656
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=17536
+mem_heap_B=7132
+mem_heap_extra_B=84
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=17920
+mem_heap_B=7388
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=18304
+mem_heap_B=7644
+mem_heap_extra_B=340
+mem_stacks_B=0
+heap_tree=detailed
+n7: 7644 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 5120 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 4096 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 552 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 512 0x400849: createnode (list.c:20)
+  n3: 480 0x40099C: add (list.c:61)
+   n1: 240 0x4011C1: detect_cusum (detect_cusum.c:32)
+    n0: 240 0x4013E8: main (main.c:92)
+   n1: 144 0x4011F0: detect_cusum (detect_cusum.c:35)
+    n0: 144 0x4013E8: main (main.c:92)
+   n1: 96 0x401203: detect_cusum (detect_cusum.c:37)
+    n0: 96 0x4013E8: main (main.c:92)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n1: 476 0x400F0F: diff (diff.c:8)
+  n0: 476 0x401354: main (main.c:44)
+ n1: 476 0x401008: detect_cusum (detect_cusum.c:5)
+  n0: 476 0x4013E8: main (main.c:92)
+ n1: 476 0x40101D: detect_cusum (detect_cusum.c:6)
+  n0: 476 0x4013E8: main (main.c:92)
+ n0: 32 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=18688
+mem_heap_B=7900
+mem_heap_extra_B=468
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=19072
+mem_heap_B=8156
+mem_heap_extra_B=596
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=19456
+mem_heap_B=8412
+mem_heap_extra_B=724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=19840
+mem_heap_B=8668
+mem_heap_extra_B=852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=20224
+mem_heap_B=8924
+mem_heap_extra_B=980
+mem_stacks_B=0
+heap_tree=detailed
+n7: 8924 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 5120 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 4096 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 1792 0x400849: createnode (list.c:20)
+  n3: 1760 0x40099C: add (list.c:61)
+   n1: 880 0x4011C1: detect_cusum (detect_cusum.c:32)
+    n0: 880 0x4013E8: main (main.c:92)
+   n1: 480 0x4011F0: detect_cusum (detect_cusum.c:35)
+    n0: 480 0x4013E8: main (main.c:92)
+   n1: 400 0x401203: detect_cusum (detect_cusum.c:37)
+    n0: 400 0x4013E8: main (main.c:92)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 552 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 476 0x400F0F: diff (diff.c:8)
+  n0: 476 0x401354: main (main.c:44)
+ n1: 476 0x401008: detect_cusum (detect_cusum.c:5)
+  n0: 476 0x4013E8: main (main.c:92)
+ n1: 476 0x40101D: detect_cusum (detect_cusum.c:6)
+  n0: 476 0x4013E8: main (main.c:92)
+ n0: 32 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=20608
+mem_heap_B=9180
+mem_heap_extra_B=1108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=20992
+mem_heap_B=9436
+mem_heap_extra_B=1236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=21376
+mem_heap_B=9692
+mem_heap_extra_B=1364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=21760
+mem_heap_B=9948
+mem_heap_extra_B=1492
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=22144
+mem_heap_B=10204
+mem_heap_extra_B=1620
+mem_stacks_B=0
+heap_tree=detailed
+n7: 10204 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 5120 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 4096 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 3072 0x400849: createnode (list.c:20)
+  n3: 3040 0x40099C: add (list.c:61)
+   n1: 1520 0x4011C1: detect_cusum (detect_cusum.c:32)
+    n0: 1520 0x4013E8: main (main.c:92)
+   n1: 848 0x4011F0: detect_cusum (detect_cusum.c:35)
+    n0: 848 0x4013E8: main (main.c:92)
+   n1: 672 0x401203: detect_cusum (detect_cusum.c:37)
+    n0: 672 0x4013E8: main (main.c:92)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 552 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 476 0x400F0F: diff (diff.c:8)
+  n0: 476 0x401354: main (main.c:44)
+ n1: 476 0x401008: detect_cusum (detect_cusum.c:5)
+  n0: 476 0x4013E8: main (main.c:92)
+ n1: 476 0x40101D: detect_cusum (detect_cusum.c:6)
+  n0: 476 0x4013E8: main (main.c:92)
+ n0: 32 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=22528
+mem_heap_B=10460
+mem_heap_extra_B=1748
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=22816
+mem_heap_B=10652
+mem_heap_extra_B=1844
+mem_stacks_B=0
+heap_tree=detailed
+n7: 10652 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 5120 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 4096 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 3520 0x400849: createnode (list.c:20)
+  n3: 3488 0x40099C: add (list.c:61)
+   n1: 1744 0x4011C1: detect_cusum (detect_cusum.c:32)
+    n0: 1744 0x4013E8: main (main.c:92)
+   n1: 976 0x4011F0: detect_cusum (detect_cusum.c:35)
+    n0: 976 0x4013E8: main (main.c:92)
+   n1: 768 0x401203: detect_cusum (detect_cusum.c:37)
+    n0: 768 0x4013E8: main (main.c:92)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n2: 552 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 476 0x400F0F: diff (diff.c:8)
+  n0: 476 0x401354: main (main.c:44)
+ n1: 476 0x401008: detect_cusum (detect_cusum.c:5)
+  n0: 476 0x4013E8: main (main.c:92)
+ n1: 476 0x40101D: detect_cusum (detect_cusum.c:6)
+  n0: 476 0x4013E8: main (main.c:92)
+ n0: 32 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=23304
+mem_heap_B=10176
+mem_heap_extra_B=1832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=23792
+mem_heap_B=9700
+mem_heap_extra_B=1820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=24280
+mem_heap_B=9224
+mem_heap_extra_B=1808
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=24768
+mem_heap_B=9704
+mem_heap_extra_B=1816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=25336
+mem_heap_B=10256
+mem_heap_extra_B=1832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=29440
+mem_heap_B=14352
+mem_heap_extra_B=1840
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=29440
+mem_heap_B=14352
+mem_heap_extra_B=1840
+mem_stacks_B=0
+heap_tree=peak
+n5: 14352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 9216 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 9216 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 8192 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 8192 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n1: 4096 0x4E8D25E: _IO_vfscanf (vfscanf.c:634)
+      n2: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400D48: read_data_Pps (read_data.c:94)
+        n0: 4096 0x40145C: main (main.c:114)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 3520 0x400849: createnode (list.c:20)
+  n3: 3488 0x40099C: add (list.c:61)
+   n1: 1744 0x4011C1: detect_cusum (detect_cusum.c:32)
+    n0: 1744 0x4013E8: main (main.c:92)
+   n1: 976 0x4011F0: detect_cusum (detect_cusum.c:35)
+    n0: 976 0x4013E8: main (main.c:92)
+   n1: 768 0x401203: detect_cusum (detect_cusum.c:37)
+    n0: 768 0x4013E8: main (main.c:92)
+  n0: 32 in 1 place, below massif's threshold (1.00%)
+ n3: 1104 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n1: 552 0x400CFB: read_data_Pps (read_data.c:89)
+   n0: 552 0x40145C: main (main.c:114)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 480 0x40143F: main (main.c:112)
+ n0: 32 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=33544
+mem_heap_B=10256
+mem_heap_extra_B=1832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=34112
+mem_heap_B=9704
+mem_heap_extra_B=1816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=34600
+mem_heap_B=9224
+mem_heap_extra_B=1808
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=34960
+mem_heap_B=8984
+mem_heap_extra_B=1688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=35344
+mem_heap_B=8728
+mem_heap_extra_B=1560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=35872
+mem_heap_B=8376
+mem_heap_extra_B=1384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=36256
+mem_heap_B=8120
+mem_heap_extra_B=1256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=36640
+mem_heap_B=7864
+mem_heap_extra_B=1128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=37072
+mem_heap_B=7576
+mem_heap_extra_B=984
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=37456
+mem_heap_B=7320
+mem_heap_extra_B=856
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=37840
+mem_heap_B=7064
+mem_heap_extra_B=728
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=38272
+mem_heap_B=6776
+mem_heap_extra_B=584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=38656
+mem_heap_B=6520
+mem_heap_extra_B=456
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=39040
+mem_heap_B=6264
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=39472
+mem_heap_B=5976
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=39496
+mem_heap_B=5960
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=39520
+mem_heap_B=5944
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=39544
+mem_heap_B=5928
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=39568
+mem_heap_B=5912
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5912 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 5120 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 4096 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 552 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 224 0x400849: createnode (list.c:20)
+  n3: 224 0x40099C: add (list.c:61)
+   n1: 128 0x4011F0: detect_cusum (detect_cusum.c:35)
+    n0: 128 0x4013E8: main (main.c:92)
+   n1: 96 0x401203: detect_cusum (detect_cusum.c:37)
+    n0: 96 0x4013E8: main (main.c:92)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 16 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=39592
+mem_heap_B=5896
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=39616
+mem_heap_B=5880
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=39640
+mem_heap_B=5864
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=39664
+mem_heap_B=5848
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=39688
+mem_heap_B=5832
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=39712
+mem_heap_B=5816
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=39736
+mem_heap_B=5800
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=39760
+mem_heap_B=5784
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=39784
+mem_heap_B=5768
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=39808
+mem_heap_B=5752
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5752 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n2: 5120 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+    n2: 4096 0x4EAC60C: _IO_default_uflow (genops.c:413)
+     n1: 4096 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+      n1: 4096 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+       n1: 4096 0x400C13: count_data_in_file (read_data.c:66)
+        n0: 4096 0x4012EC: main (main.c:21)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x401309: main (main.c:22)
+ n2: 552 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+  n1: 552 0x400BD6: count_data_in_file (read_data.c:59)
+   n0: 552 0x4012EC: main (main.c:21)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 64 0x400849: createnode (list.c:20)
+  n1: 64 0x40099C: add (list.c:61)
+   n0: 64 in 3 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 16 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=39832
+mem_heap_B=5736
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=39856
+mem_heap_B=5720
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=39880
+mem_heap_B=5704
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=39904
+mem_heap_B=5688
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=39928
+mem_heap_B=5672
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=40960
+mem_heap_B=4648
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=45064
+mem_heap_B=552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty

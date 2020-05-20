@@ -1,0 +1,473 @@
+--------------------------------------------------------------------------------
+Command:            ./main
+Massif arguments:   --time-unit=B
+ms_print arguments: massif.out.28079
+--------------------------------------------------------------------------------
+
+
+    KB
+15.81^                                               ######                   
+     |                                               #                        
+     |                                               #                        
+     |                                               #                        
+     |                                               #                        
+     |                                   :@          #                        
+     |                                  :@@::::::::::#     ::                 
+     |                 @@@@@@          ::@@::::      #     :::                
+     |                 @              @::@@::::      #     :::::              
+     |                 @             :@::@@::::      #     ::::::             
+     |                 @           :::@::@@::::      #     :::::::            
+     |                 @          :@::@::@@::::      #     :::::::::          
+     |          :::::::@     : : ::@::@::@@::::      #     ::::::::::         
+     |         ::      @     ::::::@::@::@@::::      #     ::::::::::@:       
+     |         ::      @     ::::::@::@::@@::::      #     ::::::::::@        
+     |       ::::      @     ::::::@::@::@@::::      #     ::::::::::@ :::::: 
+     |       : ::      @     ::::::@::@::@@::::      #     ::::::::::@ :      
+     |       : ::      @     ::::::@::@::@@::::      #     ::::::::::@ :      
+     |       : ::      @     ::::::@::@::@@::::      #     ::::::::::@ :      
+     |       : ::      @     ::::::@::@::@@::::      #     ::::::::::@ :      
+   0 +----------------------------------------------------------------------->KB
+     0                                                                   44.01
+
+Number of snapshots: 71
+ Detailed snapshots: [7, 15, 20, 25, 27, 34 (peak), 53, 63]
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1            568              568              552            16            0
+  2          4,672            4,672            4,648            24            0
+  3          5,704            5,704            5,672            32            0
+  4          6,192            6,192            6,152            40            0
+  5          6,760            6,760            6,704            56            0
+  6         10,864           10,864           10,800            64            0
+  7         10,864           10,864           10,800            64            0
+99.41% (10,800B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->84.83% (9,216B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->84.83% (9,216B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->75.41% (8,192B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->75.41% (8,192B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->37.70% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->37.70% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->37.70% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->37.70% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->37.70% (4,096B) 0x4E8D25E: _IO_vfscanf (vfscanf.c:634)
+|   |     ->37.70% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |       ->37.70% (4,096B) 0x400CB9: read_data (read_data.c:80)
+|   |         ->37.70% (4,096B) 0x40133B: main (main.c:24)
+|   |           
+|   ->09.43% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->09.43% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->09.43% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->09.43% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->09.43% (1,024B) 0x401309: main (main.c:22)
+|             
+->10.16% (1,104B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->05.08% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->05.08% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->05.08% (552B) 0x400C6C: read_data (read_data.c:75)
+|   ->05.08% (552B) 0x40133B: main (main.c:24)
+|     
+->04.42% (480B) 0x40131E: main (main.c:23)
+  
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8         14,968            6,760            6,704            56            0
+  9         15,536            6,192            6,152            40            0
+ 10         16,024            6,680            6,628            52            0
+ 11         16,560            6,240            6,180            60            0
+ 12         17,048            6,728            6,656            72            0
+ 13         17,536            7,216            7,132            84            0
+ 14         17,920            7,600            7,388           212            0
+ 15         18,304            7,984            7,644           340            0
+95.74% (7,644B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->64.13% (5,120B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->64.13% (5,120B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->51.30% (4,096B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->51.30% (4,096B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->51.30% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->51.30% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->51.30% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->51.30% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |   
+|   ->12.83% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->12.83% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->12.83% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->12.83% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->12.83% (1,024B) 0x401309: main (main.c:22)
+|             
+->06.91% (552B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->06.91% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->06.91% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.41% (512B) 0x400849: createnode (list.c:20)
+| ->06.01% (480B) 0x40099C: add (list.c:61)
+| | ->03.01% (240B) 0x4011C1: detect_cusum (detect_cusum.c:32)
+| | | ->03.01% (240B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->01.80% (144B) 0x4011F0: detect_cusum (detect_cusum.c:35)
+| | | ->01.80% (144B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->01.20% (96B) 0x401203: detect_cusum (detect_cusum.c:37)
+| |   ->01.20% (96B) 0x4013E8: main (main.c:92)
+| |     
+| ->00.40% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.96% (476B) 0x400F0F: diff (diff.c:8)
+| ->05.96% (476B) 0x401354: main (main.c:44)
+|   
+->05.96% (476B) 0x401008: detect_cusum (detect_cusum.c:5)
+| ->05.96% (476B) 0x4013E8: main (main.c:92)
+|   
+->05.96% (476B) 0x40101D: detect_cusum (detect_cusum.c:6)
+| ->05.96% (476B) 0x4013E8: main (main.c:92)
+|   
+->00.40% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 16         18,688            8,368            7,900           468            0
+ 17         19,072            8,752            8,156           596            0
+ 18         19,456            9,136            8,412           724            0
+ 19         19,840            9,520            8,668           852            0
+ 20         20,224            9,904            8,924           980            0
+90.11% (8,924B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->51.70% (5,120B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->51.70% (5,120B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->41.36% (4,096B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->41.36% (4,096B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->41.36% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->41.36% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->41.36% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->41.36% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |   
+|   ->10.34% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->10.34% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->10.34% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->10.34% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->10.34% (1,024B) 0x401309: main (main.c:22)
+|             
+->18.09% (1,792B) 0x400849: createnode (list.c:20)
+| ->17.77% (1,760B) 0x40099C: add (list.c:61)
+| | ->08.89% (880B) 0x4011C1: detect_cusum (detect_cusum.c:32)
+| | | ->08.89% (880B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->04.85% (480B) 0x4011F0: detect_cusum (detect_cusum.c:35)
+| | | ->04.85% (480B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->04.04% (400B) 0x401203: detect_cusum (detect_cusum.c:37)
+| |   ->04.04% (400B) 0x4013E8: main (main.c:92)
+| |     
+| ->00.32% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.57% (552B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->05.57% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->05.57% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.81% (476B) 0x400F0F: diff (diff.c:8)
+| ->04.81% (476B) 0x401354: main (main.c:44)
+|   
+->04.81% (476B) 0x401008: detect_cusum (detect_cusum.c:5)
+| ->04.81% (476B) 0x4013E8: main (main.c:92)
+|   
+->04.81% (476B) 0x40101D: detect_cusum (detect_cusum.c:6)
+| ->04.81% (476B) 0x4013E8: main (main.c:92)
+|   
+->00.32% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 21         20,608           10,288            9,180         1,108            0
+ 22         20,992           10,672            9,436         1,236            0
+ 23         21,376           11,056            9,692         1,364            0
+ 24         21,760           11,440            9,948         1,492            0
+ 25         22,144           11,824           10,204         1,620            0
+86.30% (10,204B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->43.30% (5,120B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->43.30% (5,120B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->34.64% (4,096B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->34.64% (4,096B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->34.64% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->34.64% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->34.64% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->34.64% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |   
+|   ->08.66% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->08.66% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->08.66% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->08.66% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->08.66% (1,024B) 0x401309: main (main.c:22)
+|             
+->25.98% (3,072B) 0x400849: createnode (list.c:20)
+| ->25.71% (3,040B) 0x40099C: add (list.c:61)
+| | ->12.86% (1,520B) 0x4011C1: detect_cusum (detect_cusum.c:32)
+| | | ->12.86% (1,520B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->07.17% (848B) 0x4011F0: detect_cusum (detect_cusum.c:35)
+| | | ->07.17% (848B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->05.68% (672B) 0x401203: detect_cusum (detect_cusum.c:37)
+| |   ->05.68% (672B) 0x4013E8: main (main.c:92)
+| |     
+| ->00.27% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.67% (552B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->04.67% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->04.67% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.03% (476B) 0x400F0F: diff (diff.c:8)
+| ->04.03% (476B) 0x401354: main (main.c:44)
+|   
+->04.03% (476B) 0x401008: detect_cusum (detect_cusum.c:5)
+| ->04.03% (476B) 0x4013E8: main (main.c:92)
+|   
+->04.03% (476B) 0x40101D: detect_cusum (detect_cusum.c:6)
+| ->04.03% (476B) 0x4013E8: main (main.c:92)
+|   
+->00.27% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 26         22,528           12,208           10,460         1,748            0
+ 27         22,816           12,496           10,652         1,844            0
+85.24% (10,652B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->40.97% (5,120B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->40.97% (5,120B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->32.78% (4,096B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->32.78% (4,096B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->32.78% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->32.78% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->32.78% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->32.78% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |   
+|   ->08.19% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->08.19% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->08.19% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->08.19% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->08.19% (1,024B) 0x401309: main (main.c:22)
+|             
+->28.17% (3,520B) 0x400849: createnode (list.c:20)
+| ->27.91% (3,488B) 0x40099C: add (list.c:61)
+| | ->13.96% (1,744B) 0x4011C1: detect_cusum (detect_cusum.c:32)
+| | | ->13.96% (1,744B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->07.81% (976B) 0x4011F0: detect_cusum (detect_cusum.c:35)
+| | | ->07.81% (976B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->06.15% (768B) 0x401203: detect_cusum (detect_cusum.c:37)
+| |   ->06.15% (768B) 0x4013E8: main (main.c:92)
+| |     
+| ->00.26% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.42% (552B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->04.42% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->04.42% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.81% (476B) 0x400F0F: diff (diff.c:8)
+| ->03.81% (476B) 0x401354: main (main.c:44)
+|   
+->03.81% (476B) 0x401008: detect_cusum (detect_cusum.c:5)
+| ->03.81% (476B) 0x4013E8: main (main.c:92)
+|   
+->03.81% (476B) 0x40101D: detect_cusum (detect_cusum.c:6)
+| ->03.81% (476B) 0x4013E8: main (main.c:92)
+|   
+->00.26% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 28         23,304           12,008           10,176         1,832            0
+ 29         23,792           11,520            9,700         1,820            0
+ 30         24,280           11,032            9,224         1,808            0
+ 31         24,768           11,520            9,704         1,816            0
+ 32         25,336           12,088           10,256         1,832            0
+ 33         29,440           16,192           14,352         1,840            0
+ 34         29,440           16,192           14,352         1,840            0
+88.64% (14,352B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->56.92% (9,216B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->56.92% (9,216B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->50.59% (8,192B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->50.59% (8,192B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->25.30% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->25.30% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->25.30% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->25.30% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->25.30% (4,096B) 0x4E8D25E: _IO_vfscanf (vfscanf.c:634)
+|   |     ->25.30% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |       ->25.30% (4,096B) 0x400D48: read_data_Pps (read_data.c:94)
+|   |       | ->25.30% (4,096B) 0x40145C: main (main.c:114)
+|   |       |   
+|   |       ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |       
+|   ->06.32% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->06.32% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->06.32% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->06.32% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->06.32% (1,024B) 0x401309: main (main.c:22)
+|             
+->21.74% (3,520B) 0x400849: createnode (list.c:20)
+| ->21.54% (3,488B) 0x40099C: add (list.c:61)
+| | ->10.77% (1,744B) 0x4011C1: detect_cusum (detect_cusum.c:32)
+| | | ->10.77% (1,744B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->06.03% (976B) 0x4011F0: detect_cusum (detect_cusum.c:35)
+| | | ->06.03% (976B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->04.74% (768B) 0x401203: detect_cusum (detect_cusum.c:37)
+| |   ->04.74% (768B) 0x4013E8: main (main.c:92)
+| |     
+| ->00.20% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.82% (1,104B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->03.41% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->03.41% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->03.41% (552B) 0x400CFB: read_data_Pps (read_data.c:89)
+| | ->03.41% (552B) 0x40145C: main (main.c:114)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.96% (480B) 0x40143F: main (main.c:112)
+| 
+->00.20% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 35         33,544           12,088           10,256         1,832            0
+ 36         34,112           11,520            9,704         1,816            0
+ 37         34,600           11,032            9,224         1,808            0
+ 38         34,960           10,672            8,984         1,688            0
+ 39         35,344           10,288            8,728         1,560            0
+ 40         35,872            9,760            8,376         1,384            0
+ 41         36,256            9,376            8,120         1,256            0
+ 42         36,640            8,992            7,864         1,128            0
+ 43         37,072            8,560            7,576           984            0
+ 44         37,456            8,176            7,320           856            0
+ 45         37,840            7,792            7,064           728            0
+ 46         38,272            7,360            6,776           584            0
+ 47         38,656            6,976            6,520           456            0
+ 48         39,040            6,592            6,264           328            0
+ 49         39,472            6,160            5,976           184            0
+ 50         39,496            6,136            5,960           176            0
+ 51         39,520            6,112            5,944           168            0
+ 52         39,544            6,088            5,928           160            0
+ 53         39,568            6,064            5,912           152            0
+97.49% (5,912B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->84.43% (5,120B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->84.43% (5,120B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->67.55% (4,096B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->67.55% (4,096B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->67.55% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->67.55% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->67.55% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->67.55% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |   
+|   ->16.89% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->16.89% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->16.89% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->16.89% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->16.89% (1,024B) 0x401309: main (main.c:22)
+|             
+->09.10% (552B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->09.10% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->09.10% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.69% (224B) 0x400849: createnode (list.c:20)
+| ->03.69% (224B) 0x40099C: add (list.c:61)
+| | ->02.11% (128B) 0x4011F0: detect_cusum (detect_cusum.c:35)
+| | | ->02.11% (128B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->01.58% (96B) 0x401203: detect_cusum (detect_cusum.c:37)
+| | | ->01.58% (96B) 0x4013E8: main (main.c:92)
+| | |   
+| | ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.26% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 54         39,592            6,040            5,896           144            0
+ 55         39,616            6,016            5,880           136            0
+ 56         39,640            5,992            5,864           128            0
+ 57         39,664            5,968            5,848           120            0
+ 58         39,688            5,944            5,832           112            0
+ 59         39,712            5,920            5,816           104            0
+ 60         39,736            5,896            5,800            96            0
+ 61         39,760            5,872            5,784            88            0
+ 62         39,784            5,848            5,768            80            0
+ 63         39,808            5,824            5,752            72            0
+98.76% (5,752B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->87.91% (5,120B) 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->87.91% (5,120B) 0x4EAC592: _IO_doallocbuf (genops.c:398)
+|   ->70.33% (4,096B) 0x4EAB69A: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:556)
+|   | ->70.33% (4,096B) 0x4EAC60C: _IO_default_uflow (genops.c:413)
+|   |   ->70.33% (4,096B) 0x4E937B5: _IO_vfscanf (vfscanf.c:746)
+|   |   | ->70.33% (4,096B) 0x4E9C8E7: __isoc99_fscanf (isoc99_fscanf.c:34)
+|   |   |   ->70.33% (4,096B) 0x400C13: count_data_in_file (read_data.c:66)
+|   |   |     ->70.33% (4,096B) 0x4012EC: main (main.c:21)
+|   |   |       
+|   |   ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |   
+|   ->17.58% (1,024B) 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->17.58% (1,024B) 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->17.58% (1,024B) 0x4E7E23F: vfprintf (vfprintf.c:1320)
+|         ->17.58% (1,024B) 0x4E86897: printf (printf.c:33)
+|           ->17.58% (1,024B) 0x401309: main (main.c:22)
+|             
+->09.48% (552B) 0x4E9ECDB: __fopen_internal (iofopen.c:69)
+| ->09.48% (552B) 0x400BD6: count_data_in_file (read_data.c:59)
+| | ->09.48% (552B) 0x4012EC: main (main.c:21)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.10% (64B) 0x400849: createnode (list.c:20)
+| ->01.10% (64B) 0x40099C: add (list.c:61)
+| | ->01.10% (64B) in 3 places, all below massif's threshold (1.00%)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.27% (16B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 64         39,832            5,800            5,736            64            0
+ 65         39,856            5,776            5,720            56            0
+ 66         39,880            5,752            5,704            48            0
+ 67         39,904            5,728            5,688            40            0
+ 68         39,928            5,704            5,672            32            0
+ 69         40,960            4,672            4,648            24            0
+ 70         45,064              568              552            16            0
